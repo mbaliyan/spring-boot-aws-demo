@@ -3,7 +3,6 @@ package com.java.techie.aws.springbootawsdemo.config;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.client.builder.AwsClientBuilder;
-import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
@@ -16,8 +15,8 @@ public class DynamoDBConfig {
 
     public static final String SERVICE_ENDPOINT = "dynamodb.ap-south-1.amazonaws.com";
     public static final String REGION = Regions.AP_SOUTH_1.getName();
-    public static final String ACCESS_KEY = "AKIAUCPHMRQUABHFT73E";
-    public static final String SECRET_KEY = "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";
+    public static final String ACCESS_KEY = "";
+    public static final String SECRET_KEY = "";
 
     @Bean
     public DynamoDBMapper mapper() {
